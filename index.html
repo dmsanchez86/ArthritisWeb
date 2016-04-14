@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>Simulator</title>
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+        <style>
+            *,html{
+                border: none;
+                margin: 0; 
+                padding: 0; 
+            }
+            body,html{
+                height: : 100%; 
+                width: 100%;
+            }
+            body{
+                background-image: -webkit-linear-gradient(left,#e0e0e0 ,#eee,#e0e0e0 );
+                background-image: -moz-linear-gradient(left,#e0e0e0 ,#eee,#e0e0e0 );
+                background-image: linear-gradient(left,#e0e0e0 ,#eee,#e0e0e0 );
+            }
+            .main{
+                height: 100vh;
+                overflow: hidden;
+                position: relative;
+                width: 100vw;
+            }
+            .main .draw{
+                background-image: url(img/iphone.png);
+                height: 935px;
+                left: 0;
+                margin: auto;
+                max-width: 464px;
+                min-width: 320px;
+                min-height: 480px;
+                position: absolute;
+                right: 0;
+                transform: scale(.7);
+                top: -7%;
+                -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(white));
+            }
+            .main .draw iframe{
+                bottom: 0;
+                display: block;
+                height: 75%;
+                left: 1px;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                top: 10px;
+                width: 85.5%;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="main">
+            <div class="draw">
+                <iframe src="app.html"></iframe>
+            </div>
+        </div>
+    </body>
+</html>
